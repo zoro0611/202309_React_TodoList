@@ -1,4 +1,4 @@
-import { StarIcon, CalendarIcon, Pencil1Icon, FileIcon, ChatBubbleIcon } from "@radix-ui/react-icons";
+import { StarIcon, CalendarIcon, Pencil1Icon, FileIcon, ChatBubbleIcon, Cross1Icon, PlusIcon } from "@radix-ui/react-icons";
 const CreateBlock = () => {
     return (
         <div className="w-full flex flex-wrap justify-center mt-3 ">
@@ -10,10 +10,10 @@ const CreateBlock = () => {
                 </div>
                 
                 <div className="w-full flex justify-center items-center">
-                    <div className="flex justify-center items-center w-[620px] py-[40px] bg-[#F2F2F2] rounded-b-[5px]">
+                    <div className="flex justify-center items-center w-[620px] py-[40px] bg-[#F2F2F2] ">
 
-                        <div className="">
-                            {/* 分三個區塊 */}
+                        <div className=""> {/* 三個區塊 */}
+                            {/* Deadline */}
                             <div className="w-[445px] h-[70px]">
                                 <div className="flex items-center">
                                     <CalendarIcon className="mr-2"/>
@@ -26,7 +26,7 @@ const CreateBlock = () => {
                             </div>
 
 
-
+                            {/* File */}
                             <div className="w-[445px] h-[80px]">
                                 <div className="flex items-center">
                                     <FileIcon className="mr-2"/>
@@ -36,6 +36,8 @@ const CreateBlock = () => {
                                     <input className="bg-white mx-3" type="file"/>
                                 </div>
                             </div>
+                                
+                            {/* Comment */}
                             <div className="w-[445px] h-[150px]">
                                 <div className="flex items-center">
                                     <ChatBubbleIcon className="mr-2"/>
@@ -54,7 +56,21 @@ const CreateBlock = () => {
 
                 </div>
 
-            </div>
+                <div className="w-full flex justify-center items-center">
+                    <div className="flex w-[620px] rounded-b-[5px] bg-[#F2F2F2]">
+                        <button className="w-[50%] bg-white rounded-bl-[5px] text-red-500 p-4 flex items-center justify-center">
+                            <Cross1Icon className="w-[30px] h-[30px] text-red-500 block mr-2"/>
+                            <span className="text-[24px]">Cancel</span>
+                        </button>
+                        <button className="flex-1 bg-[#4A90E2] rounded-br-[5px] text-white p-4 flex items-center justify-center">
+                            <PlusIcon className="w-[36px] h-[36px] text-white block mr-2"/>
+                            <span className="text-[24px]">Add Task</span>
+                            
+                        </button>
+                    </div>
+                </div>
+
+        </div>
     )
 }
 
