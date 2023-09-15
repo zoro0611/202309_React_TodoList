@@ -31,7 +31,7 @@ const CreateBlock = ({isShown = false,  onClose}) => {
     
     
                                 {/* File */}
-                                <div className="w-[445px] h-[80px]">
+                                {/* <div className="w-[445px] h-[80px]">
                                     <div className="flex items-center">
                                         <FileIcon className="mr-2"/>
                                         <span>File</span>
@@ -39,7 +39,7 @@ const CreateBlock = ({isShown = false,  onClose}) => {
                                     <div className="mx-3"> 
                                         <input className="bg-white mx-3" type="file"/>
                                     </div>
-                                </div>
+                                </div> */}
                                     
                                 {/* Comment */}
                                 <div className="w-[445px] h-[150px]">

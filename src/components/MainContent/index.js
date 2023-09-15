@@ -1,8 +1,11 @@
 import CreateButton from "@components/CreateButton";
 import CreateBlock from "@components/CreateBlock";
+import TodoListBlock from "@components/TodoListBlock";
 
 import { useSelector, useDispatch } from "react-redux";
 import { show, close } from '@data/slice/showCreateSlice';
+
+
 
 const App = () => {
     
@@ -29,6 +32,9 @@ const App = () => {
 
             {/*Create Block*/}
             <CreateBlock isShown={isShown} onClose={handleClose} />
+
+            {/*Todo List Block*/}
+            <TodoListBlock />
             
 
         </div>
